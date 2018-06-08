@@ -1,0 +1,152 @@
+<html lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="content-language" content="en-US"/>
+    <title>StudioArc</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Helvetica Neue' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <div class="logo"><a href="#scroll-up"><img src="assets/images/logo.png" class="responsive"/></a></div>
+        <ul class="social-media">
+          <li><a href="#" ><img src="assets/images/facebook.svg" class="responsive-ss" /></a></li>
+          <li><a href="#" ><img src="assets/images/instagram.svg" class="responsive-ss" /></a></li>
+          <li><a href="#" ><img src="assets/images/pinterest.svg" class="responsive-ss" /></a></li>
+        </ul>
+      </div>
+      <div class="navmenu">
+        <ul class="menu">
+          <li><a href="#container-about">About</a></li>
+          <li><a href="#container-projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="section-1" id="scroll-up">
+    <div class="image1"><img src="assets/images/image1.png" class="responsive1"/></div>
+    <div class="name">ARPITHA RAMACHANDRA</div>
+    <div class="description">INTERIOR DESIGN STUDIO</div>
+  </div>
+
+  <div class="section-2">
+    <div class="image2"><img src="assets/images/image2.png" class="responsive" /></div>
+  </div>
+
+  <div id="container-about">
+    <ul class="section-3">
+      <li id="about">About</li>
+      <li class="intro"><p>Studio ARC believes that designs drive everything that we do from planning to interiors. Beginning with an understanding of what you seek, your ideology & preferences, we will customize and create a design for your space which you have dreamt of.
+We deliver each project with responsive service and technical excellence to your complete satisfaction, which we consider as the ultimate measure of our success. We stand apart in the diversity of our work with a growing portfolio of projects that touch every aspect of modern living.</p>
+      <br />
+      <p>At Studio ARC: interior design is our business and our passion. We believe that a house becomes a HOME and an empty shell turns into a beautiful WORKSPACE when it&apos;s personalized. Your space should show off your tastes and personality, we ensure to work with your lifestyle. We know that creating a home/office interior that does require all of these things isn&apos;t easy, and we&apos;re here to help.</p>
+      <br />
+      <p>We want to be known as innovators and not followers. Our work reflects a desire to improve human experience through a built by design environment.</p>
+    </li>
+      <li class="image3"><img src="assets/images/image3.png" class="responsive2"/></li>
+    </ul>
+  </div>
+
+  <div id="container-projects">
+    <div class="section-4">
+      <div class="projects">Projects</div>
+      <div class="column-1">
+        <ul>
+          <li><img id="myImg1" class="myImg" src="assets/images/grid-image-1.png" alt="" /></li>
+          <li><img id="myImg2" class="myImg" src="assets/images/grid-image-2.png" alt="" /></li>
+        </ul>
+      </div>
+      <div class="column-2">
+        <ul>
+          <li><img id="myImg3" class="myImg" src="assets/images/grid-image-3.png" alt="" /></li>
+          <li><img id="myImg4" class="myImg" src="assets/images/grid-image-4.png" alt="" /></li>
+          <li><img id="myImg5" class="myImg" src="assets/images/grid-image-5.png" alt="" /></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+      <div id="contact">
+        &copy;StudioArc 2018 | +91 9980094311 | <a href="mailto:info@studioarc.design?subject=Hi%20There!">info@studioarc.design</a>
+      </div>
+    </footer>
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="enlarge">
+          <ul>
+            <li><img class="modal-content" id="img01"></li>
+            <li><div id="caption"></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <script>// Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('myImg1');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      var img = document.getElementById('myImg2');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+
+      var img = document.getElementById('myImg3');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+
+      var img = document.getElementById('myImg4');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+
+      var img = document.getElementById('myImg5');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      } </script>
+
+
+  </body>
+  </html>
